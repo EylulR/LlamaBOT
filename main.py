@@ -4,6 +4,8 @@ from discord.ext import commands
 import asyncio
 from keep_alive import keep_alive
 
+TOKEN = os.getenv("DISCORD_TOKEN")
+
 # Inicializar bot
 intents = discord.Intents.default()
 intents.message_content = True
