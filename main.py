@@ -94,8 +94,8 @@ async def play(ctx, *, query: str):
     }
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-        info = ydl.extract_info(query, download=False)
-        url = info.get("url", None)
+        info = ydl.extract_info(f"ytsearch:{query}", download=False)
+        url = info["entries"][0]["url"]
         title = info.get("title", "desconocido")
 
     source = await discord.FFmpegOpusAudio.from_probe(url)
