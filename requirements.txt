@@ -3,3 +3,4 @@ flask
 gTTS
 yt-dlp
 ffmpeg-python
+PyNaCl
