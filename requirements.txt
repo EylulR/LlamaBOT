@@ -1,6 +1,5 @@
-discord.py
-flask
-gTTS
+discord.py==2.4.0
 yt-dlp
+pynacl
+requests
 ffmpeg-python
-PyNaCl
